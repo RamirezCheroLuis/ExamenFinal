@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebDeveloper.Model.DTO.AutorModelView>
+
+@{
+    ViewBag.Title = "_List";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>_List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorApellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorCiudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorSexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorSalario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorApellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorCiudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorSexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AutorSalario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

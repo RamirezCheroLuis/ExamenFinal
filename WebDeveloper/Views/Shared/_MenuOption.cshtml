@@ -1,0 +1,9 @@
+﻿<ul class="nav navbar-nav">
+    <li>@Html.ActionLink("Home", "Index", new { controller = "Home", area = "" })</li>
+    @if(Request.IsAuthenticated)
+    { 
+        
+        <li>@Html.ActionLink("Autor", "Index", new { controller= "Autor", area = "Autor" })</li>    
+    }
+</ul>
+
