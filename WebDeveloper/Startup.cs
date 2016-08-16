@@ -37,8 +37,8 @@ namespace WebDeveloper
 
                     var user = new WebDeveloperUser
                     {
-                        UserName = "juvega@gmail.com",
-                        Email = "juvega@gmail.com"
+                        UserName = "ramirez.chero.luis@gmail.com",
+                        Email = "ramirez.chero.luis@gmail.com"
                     };
 
                     string userPassword = "Passw0rd2016";

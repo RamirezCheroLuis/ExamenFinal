@@ -17,7 +17,7 @@ namespace WebDeveloper.Model
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int BusinessEntityID { get; set; }
+        public int Id { get; set; }
         
 
         public virtual ICollection<ModelLibro> Libro { get; set; }

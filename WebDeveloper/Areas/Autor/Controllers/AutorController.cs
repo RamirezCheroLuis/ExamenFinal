@@ -39,11 +39,7 @@ namespace WebDeveloper.Areas.Autor.Controllers
             return PartialView("_List",_personRepository.GetListDto().Page(page.Value, size.Value));
         }
 
-        //public PartialViewResult EmailList(int? id)
-        //{
-        //    if (!id.HasValue) return null;
-        //    return PartialView("_EmailList", _personRepository.EmailList(id.Value));
-        //}
+
 
         public PartialViewResult Create()
         {
